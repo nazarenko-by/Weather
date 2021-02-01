@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="selectors">
+        <select name="country" class="countries order-alpha" id="countryId">
+            <option value="">Select Country</option>
+        </select>
+        <select name="state" class="states order-alpha" id="stateId">
+            <option value="">Select State</option>
+        </select>
+        <select name="city" class="cities order-alpha" id="cityId">
+            <option value="">Select City</option>
+        </select>
+        <button class="button">Get Weather</button>
+    </div>
+
+    <div class="weather hide">
+        <div class="weather-form">
+
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://geodata.solutions/includes/countrystatecity.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
